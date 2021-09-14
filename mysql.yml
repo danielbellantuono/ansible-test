@@ -2,6 +2,10 @@
 - name: Apache server installed
   hosts: all
 
+  # Install a collection from Ansible Galaxy.
+  collections:
+  - name: community.mysql.mysql_db
+
   tasks:
   - name: latest Apache version installed
     yum:
