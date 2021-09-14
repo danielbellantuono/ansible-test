@@ -1,0 +1,15 @@
+---
+- name: Apache server installed
+  hosts: all
+
+  tasks:
+  - name: latest Apache version installed
+    yum:
+      name: httpd
+      state: latest
+
+  - name: Create a new database with name 'bobdata'
+    community.mysql.mysql_db:
+      name: bobdata
+      state: present
+
