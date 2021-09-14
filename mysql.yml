@@ -13,7 +13,7 @@
       state: latest
 
   - name: Create a new database with name bobdata
-    community.mysql.mysql_db:
+    mysql_db:
       name: bobdata
       state: present
 
