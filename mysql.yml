@@ -4,7 +4,7 @@
 
   # Install a collection from Ansible Galaxy.
   collections:
-  - community.mysql.mysql_db
+  - community.mysql
 
   tasks:
   - name: latest Apache version installed
